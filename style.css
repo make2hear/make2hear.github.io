@@ -1,0 +1,56 @@
+:root{--ink:#172329;--muted:#56646a;--blue:#087eac;--blue-dark:#086587;--green:#63b940;--line:#dce7e9;--soft:#f6faf9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+img{max-width:100%;height:auto}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-radius:3px}
+.container{width:min(100% - 48px,1180px);margin-inline:auto}
+.skip-link{position:absolute;left:16px;top:-80px;z-index:10;background:var(--ink);color:#fff;padding:10px 16px}.skip-link:focus{top:12px}
+.site-header{border-bottom:1px solid var(--line)}
+.header-inner{min-height:100px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;flex:none}
+.brand-globe{width:108px;height:auto;display:block}
+.brand-wordmark{width:208px;height:auto;display:block}
+nav{display:flex;align-items:center;gap:clamp(18px,3vw,42px)}
+nav a,.footer-links a{text-decoration:none;font-size:.94rem;font-weight:700}
+nav a:hover,.footer-links a:hover,.text-link:hover{text-decoration:underline;text-underline-offset:5px}
+nav a[aria-current="page"]{color:var(--blue-dark);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}
+.intro{min-height:565px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr);align-items:center;gap:clamp(24px,6vw,90px);padding-block:70px 76px}
+.intro-copy{max-width:670px}
+.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:.75rem;font-weight:800;color:var(--blue-dark);margin:0 0 20px}
+.eyebrow-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:9px}
+h1,h2,h3,p{margin-top:0}
+h1{font-size:clamp(2.7rem,5.3vw,5.2rem);line-height:1.08;letter-spacing:-.055em;margin-bottom:25px;max-width:730px}
+h1 span{color:var(--blue-dark)}
+.lead{font-size:clamp(1.04rem,1.5vw,1.2rem);color:var(--muted);max-width:590px;margin-bottom:25px}
+.text-link{font-weight:700;color:var(--blue-dark);text-decoration:none}
+.text-link span{margin-left:4px}
+.hero-logo{width:100%;max-width:430px;justify-self:end;display:block}
+.steps-section{background:var(--soft);padding-block:82px 90px;border-top:1px solid var(--line)}
+.section-heading{max-width:680px;margin-bottom:35px}
+.section-heading h2,.page-title{font-size:clamp(2rem,3.5vw,3.25rem);line-height:1.13;letter-spacing:-.04em;margin-bottom:15px}
+.section-heading>p:last-child{color:var(--muted);margin-bottom:0}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.step{display:flex;flex-direction:column;min-height:323px;padding:29px 27px 27px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 30px rgba(31,70,79,.035)}
+.step-number{font-size:1.15rem;font-weight:800;letter-spacing:.03em;color:var(--blue-dark);margin-bottom:25px}
+.step:nth-child(2) .step-number{color:#388c34}
+.step-content{flex:1}
+.step h3{font-size:1.4rem;line-height:1.25;letter-spacing:-.025em;margin-bottom:12px}
+.step p{color:var(--muted);font-size:.98rem;margin-bottom:27px}
+.button{display:inline-flex;justify-content:space-between;align-items:center;gap:16px;width:100%;min-height:52px;padding:11px 16px;background:var(--blue-dark);color:#fff;border-radius:7px;text-decoration:none;font-weight:700;font-size:.93rem;line-height:1.25}
+.button:hover{background:#064b65}
+.button span{font-size:1.2rem;line-height:1}
+.file-note{color:var(--muted);font-size:.88rem;margin:21px 0 0}
+.site-footer{border-top:1px solid var(--line);padding-block:42px 54px}
+.footer-inner{display:flex;justify-content:space-between;gap:28px}
+.footer-inner strong{font-size:1.1rem}.footer-inner p{color:var(--muted);font-size:.9rem;margin:3px 0 0}
+.footer-links{display:flex;align-items:flex-start;justify-content:flex-end;gap:18px 28px;flex-wrap:wrap;max-width:660px}
+.footer-links a{font-size:.88rem}
+.page-main{padding-block:75px 95px;min-height:55vh}.page-main .eyebrow{margin-bottom:18px}.page-copy{max-width:750px;color:var(--muted);font-size:1.1rem}.page-copy p{margin-bottom:20px}.page-copy h2{font-size:1.35rem;color:var(--ink);margin:38px 0 12px}.page-copy ol{padding-left:1.4em}.page-copy li{padding-left:.35em;margin-bottom:13px}.page-copy .button{max-width:260px;margin-top:14px}.notice{padding:22px 25px;border-left:4px solid var(--green);background:var(--soft);border-radius:0 8px 8px 0}
+.component-list{display:grid;gap:16px;max-width:900px;margin:35px 0}.component{border:1px solid var(--line);border-radius:14px;padding:24px 27px;background:#fff}.component h2{font-size:1.35rem;line-height:1.3;margin:0 0 7px}.component p{color:var(--muted);margin:0 0 15px}.purchase-links{display:flex;flex-wrap:wrap;gap:8px 22px}.purchase-links a{font-weight:700;color:var(--blue-dark);text-underline-offset:4px}.component-note{max-width:900px;color:var(--muted);font-size:.94rem}
+@media(max-width:1080px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.intro{grid-template-columns:1fr;min-height:auto;padding-block:65px}.hero-logo{width:min(70%,330px);justify-self:center}.steps{grid-template-columns:1fr}.step{min-height:0}.step-number{margin-bottom:12px}.step p{margin-bottom:24px}.footer-inner{flex-direction:column}.footer-links{justify-content:flex-start}}
+@media(max-width:640px){.header-inner{min-height:0;align-items:flex-start;flex-direction:column;padding-block:18px;gap:14px}nav{width:100%;justify-content:space-between;gap:12px}}
+@media(max-width:560px){.container{width:min(100% - 36px,1180px)}.header-inner{min-height:0;align-items:flex-start;flex-direction:column;padding-block:18px;gap:14px}.brand-globe{width:84px;height:auto}.brand-wordmark{width:168px}nav{width:100%;justify-content:space-between;gap:12px}nav a{font-size:.9rem}.intro{padding-block:51px 58px;gap:18px}.hero-logo{width:min(80%,280px)}.steps-section{padding-block:61px 70px}.step{padding:24px}.section-heading{margin-bottom:28px}.site-footer{padding-block:34px 45px}.footer-links{flex-direction:column;gap:10px}.page-main{padding-block:55px 75px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

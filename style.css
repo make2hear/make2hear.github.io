@@ -131,8 +131,9 @@ h1 span{color:var(--blue-dark)}
 .media-heading h2{margin:0;font-size:clamp(1.5rem,2.5vw,2rem);line-height:1.2;letter-spacing:-.025em}
 .media-heading .text-link{display:inline-flex;align-items:center;min-height:44px;font-size:.9rem}
 .media-description{max-width:650px;margin-bottom:24px;color:var(--muted)}
-.app-preview-panel{padding:32px 24px;border:1px solid var(--line);border-radius:14px;background:var(--soft)}
-.app-preview-panel .app-preview{width:min(100%,300px);margin:0 auto}
+.app-preview-panel{display:grid;grid-template-columns:repeat(2,minmax(0,360px));justify-content:center;align-items:start;gap:32px clamp(24px,5vw,64px);padding:32px 24px;border:1px solid var(--line);border-radius:14px;background:var(--soft)}
+.app-preview-panel .app-preview{width:100%;margin:0}
+@media(max-width:640px){.app-preview-panel{grid-template-columns:minmax(0,360px)}}
 .demo-video{display:block;width:100%;height:auto;aspect-ratio:16/9;min-height:200px;border:1px solid var(--line);border-radius:14px;background:var(--ink)}
 .demo-video:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
 @media(max-width:900px){.prototype-overview{grid-template-columns:minmax(0,1fr);gap:24px}}
